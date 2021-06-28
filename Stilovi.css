@@ -1,0 +1,251 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-size: inherit;
+}
+
+:root {
+   font-size: 62.5%;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: #212121;
+}
+
+a {
+   text-decoration: none;
+   color: black;
+}
+
+li {
+   list-style: none;
+}
+
+.navigacija-meni {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem 0;
+}
+
+.grb-rijeke {
+   height: 8rem;
+   margin-left: 5rem;
+   margin-top: 2rem;
+}
+
+.navigacijska-lista {
+   display: flex;
+   margin-right: 5rem;
+}
+
+.navigacijska-lista li {
+   margin: 0 1rem;
+   font-size: 2.2rem;
+   padding: 0.5rem 1.5rem;
+   border-bottom: 0.2rem transparent solid;
+}
+
+.navigacijska-lista li:hover {
+   cursor: pointer;
+   background-color: #8F3434;
+   border-radius: 8px;
+   transition: all .15s ease-in-out;
+   transform: scale(1.05);
+}
+
+header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 1;
+}
+
+.naslovnica {
+   width: 100%;
+   height: 100vh;
+}
+
+.naslovnica-slika {
+   width: 100%;
+   height: 100%;
+}
+
+.naslovnica-slika img {
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+}
+
+.crvena-traka {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 17vh;
+   background-color: rgba(143, 52, 52, 0.803);
+
+   color: white;
+   font-size: 2.5rem;
+   text-transform: uppercase;
+}
+
+.crvena-traka .kontenjer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%; 
+}
+
+.slika-grb {
+   height: 7vh;
+   width: auto;
+}
+   
+.slika-grb img {
+   object-fit: contain;
+}
+
+.crvena-traka .kontenjer > div {
+   flex: 1 1 25%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 100%;
+   padding: 3rem 0;
+}
+
+.broj-starost,
+.broj-povrsina,
+.broj-populacija {
+padding-top: 1.5rem;
+font-size: 3rem;
+font-weight: bold;
+}
+
+.broj-povrsina {
+padding-top: 0.5rem;
+}
+
+
+/* OPCENITO */
+#opcenito {
+   width: 100%;
+   height: 100vh;
+   background-color: #ccc;
+   display: flex;
+   }
+   
+   .opcenito-slike {
+   flex: 1;
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   position: relative;
+   }
+   
+   .opcenito-slike img {
+   object-fit: cover;
+   object-position: left;
+   height: 100%;
+   }
+   
+   .opcenito-slike::after {
+   content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(rgba(0, 0, 0, 0.398), 0.5);
+      z-index: 10;
+   }
+   
+   .opcenito-kontenjer {
+   flex: 1;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   }
+   
+   .opcenito-kontenjer h2 {
+   font-size: 5rem;
+   }
+   
+   .opcenito-kontenjer p {
+   margin-top: 4rem;
+   font-size: 2rem;
+   max-width: 50ch;
+   text-align: justify;
+   letter-spacing: 2px;
+   line-height: 1.5;
+   }
+
+   #povijest {
+      width: 100%;
+      background-color: rgb(238, 238, 238);
+      display: flex;
+      }
+      
+      #povijest h2 {
+      font-size: 5rem;
+      }
+      
+      #povijest h3 {
+      font-size: 3rem;
+      }
+      
+      .povijest-opcenito {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem;
+      }
+      
+      .povijest-opcenito h2 {
+      margin-bottom: 2rem;
+      }
+
+      .povijest-opcenito p {
+      font-size: 2rem;
+      line-height: 1.4;
+      letter-spacing: 2px;
+      max-width: 80ch;
+      text-align: justify;
+      margin-bottom: 3rem;
+      }
+      
+      .povijest-zanimljivo {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 5rem;
+      }
+      
+      .povijest-zanimljivo ul {
+      list-style: disc;
+      }
+      
+      .povijest-zanimljivo li{
+         font-size: 1.5rem;
+         margin: 2rem 0;
+         font-weight: bold;
+      }
+
+      .footer {
+         width: 100%;
+         height: 15vh;
+         background-color: rgba(143, 52, 52, 0.803);
+         color: white;
+         font-size: 2rem;
+         text-align: center;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
